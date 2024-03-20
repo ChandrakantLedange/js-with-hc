@@ -37,3 +37,32 @@ console.log(typeof isLoggedIn); //boolean
 console.log(typeof outsideTemp); //object
 console.log(typeof heros); //object
 console.log(typeof myFunction); //function
+
+//++++++++++++++++++++++++++++++++++++++
+//Stack and Heap memory
+
+//Stack(Primitive)
+//stack memory creates a reference of value or copy
+
+let myName = "Ganesh";
+
+let myChildHoodName = myName;
+
+myChildHoodName = "Chiman";
+
+console.log(myName);
+console.log(myChildHoodName);
+
+//Heap(Non-primitive)
+//Heap memory use direct value reference.
+
+let userOne = {
+  name: "monika",
+  userEmail: "monika@gmail.com",
+};
+
+let userTwo = userOne;
+
+userTwo.name = "Jeevika";
+console.log(userOne);
+console.log(userTwo);
